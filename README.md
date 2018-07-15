@@ -3,12 +3,12 @@ Loading Fastly logs from Google Cloud Storage bucket to BigQuery
 
 **Usage**
 
-./load-fastly.sh DATE
+./load-fastly.sh --dataset={datasetname} --date={YYYY-MM-DD}
 
 **Example**
 
-The following will load the day of 2018-07-02
+The following will load the day of *2018-07-02* into dataset *mydataset*
 
 ```
-./load-fastly.sh 2018-07-02
+./load-fastly.sh --dataset=mydataset --date=2018-07-02
 ```
